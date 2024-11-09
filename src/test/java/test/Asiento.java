@@ -5,12 +5,9 @@ public class Asiento {
 	int precio;
 	int registro;
 	
-	void cambiarColor(String color) {
-		if (color.equals("rojo")||color.equals("verde")||color.equals("amarillo")||color.equals("negro")||color.equals("blanco")) {
-			this.color = color;
-		}
-		else {
-			this.color = null; 
+	void cambiarColor(String nuevoColor) {
+		if (nuevoColor.equals("rojo")||nuevoColor.equals("verde")||nuevoColor.equals("amarillo")||nuevoColor.equals("negro")||nuevoColor.equals("blanco")) {
+			color = nuevoColor;
 		}
 	}
 }
