@@ -26,12 +26,13 @@ public class Auto {
 			if(registro == motor.registro) {
 				int j = 0;
 				for (int i = 0; i<asientos.length;i++) {
-					if(registro != asientos[i].registro) {
-						break;
+					if (asientos[i] != null) {
+						if(registro == asientos[i].registro) {
+							j++;
+						}
 					}
-					j++;
 				}
-				if (j != 0 && j == asientos.length) {
+				if (j == cantidadAsientos()) {
 					mensaje = "Auto original";
 				}
 			}
